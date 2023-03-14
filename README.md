@@ -1,1 +1,2 @@
 # mini_database
+This is a mini data-base created with C++; It involves more fundamentals of programming such as functions, flow control statements, arrays, structs; It is not a useable product since the data is lost when the program ends but it's an interesting way to put together C++ programming fundamentals;
