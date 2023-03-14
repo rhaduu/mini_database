@@ -1,6 +1,7 @@
 #include <iostream>
-#include <cstring>
+#include <cstring> //I included this library because I am going to use strstr and strcmp later on
 
+//created the struct. I used arrays of characters because I find it easier to check if a string is there (using strstr)
 struct employee{
     char name[50];
     char depart[30];
@@ -46,6 +47,7 @@ int main() {
     return 0;
 }
 
+//function to add an element in the "data-base"
 void add(){
     std::cin.ignore(256, '\n');
     std::cout << "\nPlease enter the employee's name: ";
@@ -57,6 +59,7 @@ void add(){
     n++;
 }
 
+//function to display the elements from the "data-base"
 void display(){
     std::cout << "\nThe employees: ";
 
@@ -65,6 +68,8 @@ void display(){
 
 }
 
+/*function to search for an element in the "data-base". I created another array of chars to get the info from the user; 
+I created a variable "found" in order to have a signal if the string was found or not;*/
 void search(){
     char searched[50];
     int found = 0;
@@ -84,6 +89,7 @@ void search(){
         std::cout<<"The employee was not found!\n";
 }
 
+//function to display the the elements that have a specific component. same as in the search function;
 void department(){
     char dprt[30];
     int result=0;
